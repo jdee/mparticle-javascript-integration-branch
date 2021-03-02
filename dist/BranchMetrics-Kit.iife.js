@@ -207,6 +207,7 @@ var BranchMetricsKit = (function (exports, branchSdk) {
     var initialization = {
         name: 'BranchMetrics',
         initForwarder: function(settings, testMode, userAttributes, userIdentities, processEvent, eventQueue, isInitialized, common) {
+            common.settings = settings;
             var requireBranch = true;
 
             if (!testMode) {
